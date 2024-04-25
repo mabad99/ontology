@@ -1,0 +1,587 @@
+Prefix(:=<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(FlightsSurvey:=<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#>)
+
+
+Ontology(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey>
+
+Declaration(Class(FlightsSurvey:City))
+Declaration(Class(FlightsSurvey:Country))
+Declaration(Class(FlightsSurvey:Date))
+Declaration(Class(FlightsSurvey:Detractor))
+Declaration(Class(FlightsSurvey:NPS))
+Declaration(Class(FlightsSurvey:Neutral))
+Declaration(Class(FlightsSurvey:Promoter))
+Declaration(Class(FlightsSurvey:Survey))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller>))
+Declaration(Class(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline>))
+Declaration(ObjectProperty(FlightsSurvey:hasAircraft))
+Declaration(ObjectProperty(FlightsSurvey:hasAirline))
+Declaration(ObjectProperty(FlightsSurvey:hasCountry))
+Declaration(ObjectProperty(FlightsSurvey:hasDate))
+Declaration(ObjectProperty(FlightsSurvey:hasDateFlown))
+Declaration(ObjectProperty(FlightsSurvey:hasDestination))
+Declaration(ObjectProperty(FlightsSurvey:hasOrigin))
+Declaration(ObjectProperty(FlightsSurvey:hasPassenger))
+Declaration(ObjectProperty(FlightsSurvey:hasPublished))
+Declaration(ObjectProperty(FlightsSurvey:hasSeatType))
+Declaration(ObjectProperty(FlightsSurvey:hasTypeOfTravel))
+Declaration(DataProperty(FlightsSurvey:hasOverallRating))
+Declaration(DataProperty(FlightsSurvey:isVerified))
+Declaration(NamedIndividual(FlightsSurvey:A350))
+Declaration(NamedIndividual(FlightsSurvey:A350-1000))
+Declaration(NamedIndividual(FlightsSurvey:A380))
+Declaration(NamedIndividual(FlightsSurvey:A380-800))
+Declaration(NamedIndividual(FlightsSurvey:AlwaleedAlthani))
+Declaration(NamedIndividual(FlightsSurvey:Auckland))
+Declaration(NamedIndividual(FlightsSurvey:Australia))
+Declaration(NamedIndividual(FlightsSurvey:BDarnel))
+Declaration(NamedIndividual(FlightsSurvey:BrianEnglish))
+Declaration(NamedIndividual(FlightsSurvey:Business))
+Declaration(NamedIndividual(FlightsSurvey:BusinessClass))
+Declaration(NamedIndividual(FlightsSurvey:CBarker))
+Declaration(NamedIndividual(FlightsSurvey:Canada))
+Declaration(NamedIndividual(FlightsSurvey:CoupleLeisure))
+Declaration(NamedIndividual(FlightsSurvey:Doha))
+Declaration(NamedIndividual(FlightsSurvey:Dusseldorf))
+Declaration(NamedIndividual(FlightsSurvey:EconomyClass))
+Declaration(NamedIndividual(FlightsSurvey:FamilyLeisure))
+Declaration(NamedIndividual(FlightsSurvey:FirstClass))
+Declaration(NamedIndividual(FlightsSurvey:Frankfurt))
+Declaration(NamedIndividual(FlightsSurvey:Germany))
+Declaration(NamedIndividual(FlightsSurvey:KilimanjaroViaDoha))
+Declaration(NamedIndividual(FlightsSurvey:London))
+Declaration(NamedIndividual(FlightsSurvey:LondonHeathrow))
+Declaration(NamedIndividual(FlightsSurvey:LondonHeathrowViaDoha))
+Declaration(NamedIndividual(FlightsSurvey:MaryLe))
+Declaration(NamedIndividual(FlightsSurvey:MelbourneViaDoha))
+Declaration(NamedIndividual(FlightsSurvey:Montreal))
+Declaration(NamedIndividual(FlightsSurvey:NFoster))
+Declaration(NamedIndividual(FlightsSurvey:NewDelhi))
+Declaration(NamedIndividual(FlightsSurvey:Perth))
+Declaration(NamedIndividual(FlightsSurvey:QandeelAhtasham))
+Declaration(NamedIndividual(FlightsSurvey:Qatar))
+Declaration(NamedIndividual(FlightsSurvey:SanFrancisco))
+Declaration(NamedIndividual(FlightsSurvey:SoloLeisure))
+Declaration(NamedIndividual(FlightsSurvey:Tokyo))
+Declaration(NamedIndividual(FlightsSurvey:UnitedKingdom))
+Declaration(NamedIndividual(FlightsSurvey:UnitedStates))
+Declaration(NamedIndividual(FlightsSurvey:WWarnock))
+Declaration(NamedIndividual(FlightsSurvey:WayneBurgess))
+Declaration(NamedIndividual(FlightsSurvey:qatar_airways))
+Declaration(NamedIndividual(FlightsSurvey:ryanAir))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777>))
+Declaration(AnnotationProperty(rdfs:sameAs))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: FlightsSurvey:hasAircraft (hasAircraft)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasAircraft "has Aircraft")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasAircraft "hasAircraft")
+ObjectPropertyDomain(FlightsSurvey:hasAircraft FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasAircraft <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft>)
+
+# Object Property: FlightsSurvey:hasAirline (hasAirline)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasAirline "has Airline")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasAirline "hasAirline")
+ObjectPropertyDomain(FlightsSurvey:hasAirline FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasAirline <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline>)
+
+# Object Property: FlightsSurvey:hasCountry (hasCountry)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasCountry "has Country")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasCountry "hasCountry")
+ObjectPropertyDomain(FlightsSurvey:hasCountry <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger>)
+ObjectPropertyRange(FlightsSurvey:hasCountry FlightsSurvey:Country)
+
+# Object Property: FlightsSurvey:hasDate (hasDate)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasDate "has Date")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasDate "hasDate")
+ObjectPropertyDomain(FlightsSurvey:hasDate FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasDate FlightsSurvey:Date)
+
+# Object Property: FlightsSurvey:hasDateFlown (hasDateFlown)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasDateFlown "has Date Flown")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasDateFlown "hasDateFlown")
+ObjectPropertyDomain(FlightsSurvey:hasDateFlown FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasDateFlown FlightsSurvey:Date)
+
+# Object Property: FlightsSurvey:hasDestination (hasDestination)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasDestination "has Destination")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasDestination "hasDestination")
+ObjectPropertyDomain(FlightsSurvey:hasDestination FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasDestination FlightsSurvey:City)
+
+# Object Property: FlightsSurvey:hasOrigin (hasOrigin)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasOrigin "has Origin")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasOrigin "hasOrigin")
+ObjectPropertyDomain(FlightsSurvey:hasOrigin FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasOrigin FlightsSurvey:City)
+
+# Object Property: FlightsSurvey:hasPassenger (hasPassenger)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasPassenger "has Passenger")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasPassenger "hasPassenger")
+SubObjectPropertyOf(FlightsSurvey:hasPassenger owl:topObjectProperty)
+ObjectPropertyDomain(FlightsSurvey:hasPassenger FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasPassenger <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger>)
+
+# Object Property: FlightsSurvey:hasPublished (hasPublished)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasPublished "has Published")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasPublished "hasPublished")
+ObjectPropertyDomain(FlightsSurvey:hasPublished FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasPublished <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger>)
+
+# Object Property: FlightsSurvey:hasSeatType (hasSeatType)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasSeatType "has Seat Type")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasSeatType "hasSeatType")
+ObjectPropertyDomain(FlightsSurvey:hasSeatType FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasSeatType <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type>)
+
+# Object Property: FlightsSurvey:hasTypeOfTravel (hasTypeOfTraveller)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasTypeOfTravel "has Type of Travel")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasTypeOfTravel "hasTypeOfTraveller")
+ObjectPropertyDomain(FlightsSurvey:hasTypeOfTravel FlightsSurvey:Survey)
+ObjectPropertyRange(FlightsSurvey:hasTypeOfTravel <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: FlightsSurvey:hasOverallRating (hasOverallRating)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:hasOverallRating "has Overall Rating")
+AnnotationAssertion(rdfs:label FlightsSurvey:hasOverallRating "hasOverallRating")
+DataPropertyDomain(FlightsSurvey:hasOverallRating FlightsSurvey:Survey)
+DataPropertyRange(FlightsSurvey:hasOverallRating DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer xsd:maxInclusive "10"^^xsd:integer))
+
+# Data Property: FlightsSurvey:isVerified (isVerified)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:isVerified "is Verified")
+AnnotationAssertion(rdfs:label FlightsSurvey:isVerified "isVerified")
+FunctionalDataProperty(FlightsSurvey:isVerified)
+DataPropertyDomain(FlightsSurvey:isVerified FlightsSurvey:Survey)
+DataPropertyRange(FlightsSurvey:isVerified DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer xsd:maxInclusive "1"^^xsd:integer))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: FlightsSurvey:City (City)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:City "Cities with airports")
+AnnotationAssertion(rdfs:label FlightsSurvey:City "City")
+
+# Class: FlightsSurvey:Country (Country)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:Country "The country of the passenger")
+AnnotationAssertion(rdfs:label FlightsSurvey:Country "Country")
+
+# Class: FlightsSurvey:Date (Date)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:Date "The date of the survey")
+AnnotationAssertion(rdfs:label FlightsSurvey:Date "Date")
+AnnotationAssertion(rdfs:sameAs FlightsSurvey:Date "http://dbpedia.org/page/Date")
+
+# Class: FlightsSurvey:Detractor (Detractor)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:Detractor "Overall rating less than 7")
+AnnotationAssertion(rdfs:label FlightsSurvey:Detractor "Detractor")
+SubClassOf(FlightsSurvey:Detractor FlightsSurvey:NPS)
+
+# Class: FlightsSurvey:NPS (NPS)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:NPS "NPS extracted from  survey's Overall Rating.")
+AnnotationAssertion(rdfs:label FlightsSurvey:NPS "NPS")
+
+# Class: FlightsSurvey:Neutral (Neutral)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:Neutral "Overall rating between 7 and 9")
+AnnotationAssertion(rdfs:label FlightsSurvey:Neutral "Neutral")
+SubClassOf(FlightsSurvey:Neutral FlightsSurvey:NPS)
+
+# Class: FlightsSurvey:Promoter (Promoter)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:Promoter "Overall rating greater or equal  than 7")
+AnnotationAssertion(rdfs:label FlightsSurvey:Promoter "Promoter")
+SubClassOf(FlightsSurvey:Promoter FlightsSurvey:NPS)
+
+# Class: FlightsSurvey:Survey (Survey)
+
+AnnotationAssertion(rdfs:comment FlightsSurvey:Survey "Survey data")
+AnnotationAssertion(rdfs:label FlightsSurvey:Survey "Survey")
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> (Aircraft)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> "The aircraft/s used in the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> "Aircraft")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> "https://dbpedia.org/page/Aircraft")
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> (Comment Title)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> "The title of the comment")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> "Comment Title")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> (Comment desc)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> "The full comment")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> "Comment desc")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> (Destination)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> "The destination city of the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> "Destination")
+EquivalentClasses(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> ObjectAllValuesFrom(FlightsSurvey:hasDestination FlightsSurvey:City))
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:City)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> (Cabin Staff Service)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> "Cabin Staff Service value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> "Cabin Staff Service")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> (Food and Beverages)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> "'Food and Beverages' value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> "Food and Beverages")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> (Ground Service)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> "'Ground Service' value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> "Ground Service")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> (Inflight Entertainment)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> "'Inflight Entertainment' value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> "Inflight Entertainment")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> (Seat Comfort)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> "'Seat Comfort' value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> "Seat Comfort")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> (Value for Money)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> "'Value for Money' value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> "Value for Money")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> (Wifi Connectivity)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> "'Wifi Connectivity' value")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> "Wifi Connectivity")
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> FlightsSurvey:Survey)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> (Origin)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> "The origin city of the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> "Origin")
+EquivalentClasses(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> ObjectAllValuesFrom(FlightsSurvey:hasOrigin FlightsSurvey:City))
+SubClassOf(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:City)
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> (Passenger)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> "The passenger's name")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> "Passenger")
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> (Seat Type)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> "The seat type used in the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> "Seat Type")
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> (Type Of Traveller)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> "Passenger's type of travel")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> "Type Of Traveller")
+
+# Class: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> (Airline)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> "The airline in the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> "Airline")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> "https://dbpedia.org/page/Airline")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: FlightsSurvey:A350 (FlightsSurvey:A350)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> FlightsSurvey:A350)
+
+# Individual: FlightsSurvey:A350-1000 (FlightsSurvey:A350-1000)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> FlightsSurvey:A350-1000)
+
+# Individual: FlightsSurvey:A380 (FlightsSurvey:A380)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> FlightsSurvey:A380)
+
+# Individual: FlightsSurvey:A380-800 (FlightsSurvey:A380-800)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> FlightsSurvey:A380-800)
+
+# Individual: FlightsSurvey:AlwaleedAlthani (FlightsSurvey:AlwaleedAlthani)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:AlwaleedAlthani)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:AlwaleedAlthani FlightsSurvey:Qatar)
+
+# Individual: FlightsSurvey:Auckland (FlightsSurvey:Auckland)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:Auckland)
+
+# Individual: FlightsSurvey:Australia (FlightsSurvey:Australia)
+
+ClassAssertion(FlightsSurvey:Country FlightsSurvey:Australia)
+
+# Individual: FlightsSurvey:BDarnel (FlightsSurvey:BDarnel)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:BDarnel)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:BDarnel FlightsSurvey:Germany)
+
+# Individual: FlightsSurvey:BrianEnglish (FlightsSurvey:BrianEnglish)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:BrianEnglish)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:BrianEnglish FlightsSurvey:Canada)
+ObjectPropertyAssertion(FlightsSurvey:hasPublished FlightsSurvey:BrianEnglish <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1>)
+
+# Individual: FlightsSurvey:Business (FlightsSurvey:Business)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> FlightsSurvey:Business)
+
+# Individual: FlightsSurvey:BusinessClass (FlightsSurvey:BusinessClass)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> FlightsSurvey:BusinessClass)
+
+# Individual: FlightsSurvey:CBarker (FlightsSurvey:CBarker)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:CBarker)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:CBarker FlightsSurvey:Germany)
+
+# Individual: FlightsSurvey:Canada (FlightsSurvey:Canada)
+
+ClassAssertion(FlightsSurvey:Country FlightsSurvey:Canada)
+
+# Individual: FlightsSurvey:CoupleLeisure (FlightsSurvey:CoupleLeisure)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> FlightsSurvey:CoupleLeisure)
+
+# Individual: FlightsSurvey:Doha (FlightsSurvey:Doha)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:Doha)
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:Doha)
+
+# Individual: FlightsSurvey:Dusseldorf (FlightsSurvey:Dusseldorf)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:Dusseldorf)
+
+# Individual: FlightsSurvey:EconomyClass (FlightsSurvey:EconomyClass)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> FlightsSurvey:EconomyClass)
+
+# Individual: FlightsSurvey:FamilyLeisure (FlightsSurvey:FamilyLeisure)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> FlightsSurvey:FamilyLeisure)
+
+# Individual: FlightsSurvey:FirstClass (FlightsSurvey:FirstClass)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> FlightsSurvey:FirstClass)
+
+# Individual: FlightsSurvey:Frankfurt (FlightsSurvey:Frankfurt)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:Frankfurt)
+
+# Individual: FlightsSurvey:Germany (FlightsSurvey:Germany)
+
+ClassAssertion(FlightsSurvey:Country FlightsSurvey:Germany)
+
+# Individual: FlightsSurvey:KilimanjaroViaDoha (FlightsSurvey:KilimanjaroViaDoha)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:KilimanjaroViaDoha)
+
+# Individual: FlightsSurvey:London (FlightsSurvey:London)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:London)
+
+# Individual: FlightsSurvey:LondonHeathrow (FlightsSurvey:LondonHeathrow)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:LondonHeathrow)
+
+# Individual: FlightsSurvey:LondonHeathrowViaDoha (FlightsSurvey:LondonHeathrowViaDoha)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:LondonHeathrowViaDoha)
+
+# Individual: FlightsSurvey:MaryLe (FlightsSurvey:MaryLe)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:MaryLe)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:MaryLe FlightsSurvey:UnitedKingdom)
+
+# Individual: FlightsSurvey:MelbourneViaDoha (FlightsSurvey:MelbourneViaDoha)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:MelbourneViaDoha)
+
+# Individual: FlightsSurvey:Montreal (FlightsSurvey:Montreal)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:Montreal)
+
+# Individual: FlightsSurvey:NFoster (FlightsSurvey:NFoster)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:NFoster)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:NFoster FlightsSurvey:UnitedStates)
+
+# Individual: FlightsSurvey:NewDelhi (FlightsSurvey:NewDelhi)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:NewDelhi)
+
+# Individual: FlightsSurvey:Perth (FlightsSurvey:Perth)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:Perth)
+
+# Individual: FlightsSurvey:QandeelAhtasham (FlightsSurvey:QandeelAhtasham)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:QandeelAhtasham)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:QandeelAhtasham FlightsSurvey:UnitedKingdom)
+
+# Individual: FlightsSurvey:Qatar (FlightsSurvey:Qatar)
+
+ClassAssertion(FlightsSurvey:Country FlightsSurvey:Qatar)
+
+# Individual: FlightsSurvey:SanFrancisco (FlightsSurvey:SanFrancisco)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> FlightsSurvey:SanFrancisco)
+
+# Individual: FlightsSurvey:SoloLeisure (FlightsSurvey:SoloLeisure)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> FlightsSurvey:SoloLeisure)
+
+# Individual: FlightsSurvey:Tokyo (FlightsSurvey:Tokyo)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> FlightsSurvey:Tokyo)
+
+# Individual: FlightsSurvey:UnitedKingdom (FlightsSurvey:UnitedKingdom)
+
+ClassAssertion(FlightsSurvey:Country FlightsSurvey:UnitedKingdom)
+
+# Individual: FlightsSurvey:UnitedStates (FlightsSurvey:UnitedStates)
+
+ClassAssertion(FlightsSurvey:Country FlightsSurvey:UnitedStates)
+
+# Individual: FlightsSurvey:WWarnock (FlightsSurvey:WWarnock)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:WWarnock)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:WWarnock FlightsSurvey:UnitedKingdom)
+
+# Individual: FlightsSurvey:WayneBurgess (FlightsSurvey:WayneBurgess)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> FlightsSurvey:WayneBurgess)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry FlightsSurvey:WayneBurgess FlightsSurvey:Australia)
+
+# Individual: FlightsSurvey:qatar_airways (FlightsSurvey:qatar_airways)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> FlightsSurvey:qatar_airways)
+
+# Individual: FlightsSurvey:ryanAir (FlightsSurvey:ryanAir)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> FlightsSurvey:ryanAir)
+
+# Individual: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> (<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1>)
+
+ClassAssertion(FlightsSurvey:Survey <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1>)
+ObjectPropertyAssertion(FlightsSurvey:hasAircraft <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> FlightsSurvey:A350)
+ObjectPropertyAssertion(FlightsSurvey:hasAirline <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> FlightsSurvey:qatar_airways)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> FlightsSurvey:UnitedKingdom)
+ObjectPropertyAssertion(FlightsSurvey:hasDateFlown <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023>)
+ObjectPropertyAssertion(FlightsSurvey:hasDestination <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> FlightsSurvey:Doha)
+ObjectPropertyAssertion(FlightsSurvey:hasOrigin <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> FlightsSurvey:Auckland)
+ObjectPropertyAssertion(FlightsSurvey:hasPassenger <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> FlightsSurvey:WWarnock)
+DataPropertyAssertion(FlightsSurvey:hasOverallRating <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> "8"^^xsd:decimal)
+DataPropertyAssertion(FlightsSurvey:isVerified <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> "1"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> (<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023>)
+
+ClassAssertion(FlightsSurvey:Date <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023>)
+
+# Individual: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> (<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2>)
+
+ClassAssertion(FlightsSurvey:Survey <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2>)
+ObjectPropertyAssertion(FlightsSurvey:hasAircraft <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> FlightsSurvey:A380)
+ObjectPropertyAssertion(FlightsSurvey:hasAirline <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> FlightsSurvey:qatar_airways)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> FlightsSurvey:Australia)
+ObjectPropertyAssertion(FlightsSurvey:hasDateFlown <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023>)
+ObjectPropertyAssertion(FlightsSurvey:hasDestination <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> FlightsSurvey:Perth)
+ObjectPropertyAssertion(FlightsSurvey:hasOrigin <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> FlightsSurvey:Doha)
+ObjectPropertyAssertion(FlightsSurvey:hasPassenger <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> FlightsSurvey:WayneBurgess)
+DataPropertyAssertion(FlightsSurvey:hasOverallRating <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> "1"^^xsd:integer)
+DataPropertyAssertion(FlightsSurvey:isVerified <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> "1"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> (<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3>)
+
+ClassAssertion(FlightsSurvey:Survey <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3>)
+ObjectPropertyAssertion(FlightsSurvey:hasAircraft <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> FlightsSurvey:A380-800)
+ObjectPropertyAssertion(FlightsSurvey:hasAirline <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> FlightsSurvey:qatar_airways)
+ObjectPropertyAssertion(FlightsSurvey:hasCountry <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> FlightsSurvey:Qatar)
+ObjectPropertyAssertion(FlightsSurvey:hasDate <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023>)
+ObjectPropertyAssertion(FlightsSurvey:hasPassenger <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> FlightsSurvey:AlwaleedAlthani)
+DataPropertyAssertion(FlightsSurvey:hasOverallRating <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> "10"^^xsd:integer)
+DataPropertyAssertion(FlightsSurvey:isVerified <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> "1"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300> (<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300>)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300>)
+
+# Individual: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777> (<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777>)
+
+ClassAssertion(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777>)
+
+
+DisjointClasses(FlightsSurvey:Detractor FlightsSurvey:Neutral FlightsSurvey:Promoter)
+DisjointClasses(<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity>)
+DLSafeRule(Body(DataPropertyAtom(FlightsSurvey:hasOverallRating Variable(<urn:swrl:var#X>) Variable(<urn:swrl:var#over>)) ClassAtom(FlightsSurvey:Survey Variable(<urn:swrl:var#X>)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(<urn:swrl:var#over>) "0"^^xsd:integer) BuiltInAtom(swrlb:lessThan Variable(<urn:swrl:var#over>) "7"^^xsd:integer) ObjectPropertyAtom(FlightsSurvey:hasPassenger Variable(<urn:swrl:var#X>) Variable(<urn:swrl:var#Y>)))Head(ClassAtom(FlightsSurvey:Detractor Variable(<urn:swrl:var#X>)) ClassAtom(FlightsSurvey:Detractor Variable(<urn:swrl:var#Y>))))
+DLSafeRule(Body(DataPropertyAtom(FlightsSurvey:hasOverallRating Variable(<urn:swrl:var#X>) Variable(<urn:swrl:var#over>)) ClassAtom(FlightsSurvey:Survey Variable(<urn:swrl:var#X>)) BuiltInAtom(swrlb:lessThan Variable(<urn:swrl:var#over>) "9"^^xsd:integer) ObjectPropertyAtom(FlightsSurvey:hasPassenger Variable(<urn:swrl:var#X>) Variable(<urn:swrl:var#Y>)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(<urn:swrl:var#over>) "7"^^xsd:integer))Head(ClassAtom(FlightsSurvey:Neutral Variable(<urn:swrl:var#X>)) ClassAtom(FlightsSurvey:Neutral Variable(<urn:swrl:var#Y>))))
+DLSafeRule(Body(DataPropertyAtom(FlightsSurvey:hasOverallRating Variable(<urn:swrl:var#X>) Variable(<urn:swrl:var#over>)) BuiltInAtom(swrlb:lessThanOrEqual Variable(<urn:swrl:var#over>) "10"^^xsd:integer) ClassAtom(FlightsSurvey:Survey Variable(<urn:swrl:var#X>)) ObjectPropertyAtom(FlightsSurvey:hasPassenger Variable(<urn:swrl:var#X>) Variable(<urn:swrl:var#Y>)) BuiltInAtom(swrlb:greaterThanOrEqual Variable(<urn:swrl:var#over>) "9"^^xsd:integer))Head(ClassAtom(FlightsSurvey:Promoter Variable(<urn:swrl:var#Y>)) ClassAtom(FlightsSurvey:Promoter Variable(<urn:swrl:var#X>))))
+)
